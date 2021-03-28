@@ -1,0 +1,145 @@
+.app {
+  text-align: center;
+  border:1px solid #eee
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.listUser{
+  padding:10px;
+  border:1px solid #eee;
+  list-style: none;
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: left;
+
+}
+.userDetails{
+  width:30%;
+  margin:0 35% auto;
+  border: 1px solid #eee;
+  margin-top: 10px;
+}
+.delete{
+  position: absolute;
+    right: 10px;
+    top:15px;
+}
+.shot{
+  position: absolute;
+  right: 40px;
+  top:15px;
+}
+.listOfFriend{
+  background: #ccc;
+  margin: 0px;
+  padding: 15px 15px;
+  text-align: left;
+}
+.inputBar{
+  height: 41px;
+  width: 98%;
+  border: 1px solid #eee;
+  text-align: left;
+}
+.smallFont{
+  font-size: 10px;
+  color:#ccc
+}
+.inputBar {
+    border: 0;
+    padding: 4px 0;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+}
+.inputBar ~ label {
+    position: absolute;
+    left: 8px;
+    width: 100%;
+    top: 14px;
+    color: #aaa;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 0.5px;
+    text-align:left;
+    font-size: 14px;
+}
+.inputBar ~ .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    top:20px;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+.inputBar:focus ~ .focus-border, .has-content.inputBar ~ .focus-border {
+    width: 100%;
+    transition: 0.4s;
+}
+.inputBar ~ .focus-border {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    top:30px;
+    height: 2px;
+    background-color: #eee;
+    transition: 0.4s;
+    
+}
+input:focus {
+  outline: 0;
+}
+.inputBar:focus ~ label, .has-content.inputBar ~ label {
+    top: 0px;
+    left:0px;
+    font-size: 13px;
+    color: #aaa;
+    transition: 0.3s;
+}
+.inputMain{
+  position: relative;
+}
+.pagination{
+  list-style: none;
+    padding: 10px;
+    background-color: #ddd;
+    width: 8%;
+    float: left;
+    cursor: pointer;
+}
